@@ -1,0 +1,24 @@
+name: basic-switch-powerOnState
+components:
+- id: main
+  capabilities:
+  - id: switch
+    version: 1
+  - id: firmwareUpdate
+    version: 1
+  - id: refresh
+    version: 1
+  categories:
+    - name: Switch
+preferences:
+  - name: "powerOnState"
+    title: "Power on state"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        off: "Off"
+        on: "On"
+        toggle: "Toggle"
+        previous: "Previous state"
+      default: "on"
