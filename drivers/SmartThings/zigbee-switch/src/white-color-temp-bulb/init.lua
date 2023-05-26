@@ -57,7 +57,8 @@ local WHITE_COLOR_TEMP_BULB_FINGERPRINTS = {
     ["TRADFRI bulb E26 WS clear 806lm"] = true,
     ["TRADFRI bulb E27 WS clear 806lm"] = true,
     ["TRADFRI bulb E26 WS opal 1000lm"] = true,
-    ["TRADFRI bulb E27 WS opal 1000lm"] = true
+    ["TRADFRI bulb E27 WS opal 1000lm"] = true,
+    ["TRADFRIbulbE27WSglobeopal1055lm"] = true,
   },
   ["Megaman"] = {
     ["Z3-ColorTemperature"] = true

@@ -402,7 +402,7 @@ zigbeeManufacturer:
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
     model: "TRADFRI bulb E27 WW 806lm"
-    deviceProfileName: on-off-level
+    deviceProfileName: on-off-level-powerOnState
   - id: "IKEA/TRADFRI bulb E27 WW clear 250lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
@@ -848,6 +848,11 @@ zigbeeManufacturer:
     manufacturer: SONOFF
     model: ZBMINIL2
     deviceProfileName: basic-switch
+  - id: SONOFF/ZBMINI-L
+    deviceLabel: SONOFF Switch
+    manufacturer: SONOFF
+    model: ZBMINI-L
+    deviceProfileName: basic-switch-powerOnState
   - id: "/TERNCY-LS01"
     deviceLabel: Terncy Switch
     manufacturer:
@@ -1328,6 +1333,16 @@ zigbeeManufacturer:
     manufacturer: IKEA of Sweden
     model: TRADFRI bulb E14 WS 470lm
     deviceProfileName: color-temp-bulb-2200K-4000K
+  - id: "IKEA/TRADFRI bulb E14 WSG opal 470lm"
+    deviceLabel: IKEA Light
+    manufacturer: IKEA of Sweden
+    model: TRADFRIbulbE14WSglobeopal470lm
+    deviceProfileName: color-temp-bulb-2200K-4000K-powerOnState
+  - id: "IKEA/TRADFRI bulb E14 WSGO 1055lm"
+    deviceLabel: IKEA Light
+    manufacturer: IKEA of Sweden
+    model: TRADFRIbulbE27WSglobeopal1055lm
+    deviceProfileName: color-temp-bulb-2200K-4000K-powerOnState
   - id: "IKEA/TRADFRI bulb E14 WS opal 600lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
@@ -1633,6 +1648,11 @@ zigbeeManufacturer:
     manufacturer: IKEA of Sweden
     model: TRADFRI bulb GU10 W 400lm
     deviceProfileName: on-off-level
+  - id: "IKEA/TRADFRI bulb GU10 WW 400lm"
+    deviceLabel: IKEA Light
+    manufacturer: IKEA of Sweden
+    model: TRADFRI bulb GU10 WW 400lm
+    deviceProfileName: on-off-level-powerOnState
   - id: "IKEA/TRADFRI bulb E27 W opal 1000lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
@@ -1667,7 +1687,7 @@ zigbeeManufacturer:
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
     model: TRADFRI Driver 30W
-    deviceProfileName: on-off-level
+    deviceProfileName: on-off-level-powerOnState
   - id: Megaman/ZLL-DimmableLight
     deviceLabel: INGENIUM Light
     manufacturer: Megaman
@@ -1893,11 +1913,16 @@ zigbeeManufacturer:
     manufacturer: Philips
     model: LST002
     deviceProfileName: rgbw-bulb
+  - id: Philips/LWA009
+    deviceLabel: Philips Light
+    manufacturer: Signify Netherlands B.V.
+    model: LWA009
+    deviceProfileName: on-off-level-powerOnState
   - id: Philips/LCA008
     deviceLabel: Philips Light
     manufacturer: Signify Netherlands B.V.
     model: LCA008
-    deviceProfileName: rgbw-bulb
+    deviceProfileName: rgbw-bulb-2000K-6500K-powerOnState
   - id: GLEDOPTO/GL-B-001Z
     deviceLabel: XLSmart Light
     manufacturer: GLEDOPTO
@@ -1997,7 +2022,7 @@ zigbeeManufacturer:
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
     model: TRADFRI bulb E27 CWS opal 600lm
-    deviceProfileName: color-bulb
+    deviceProfileName: color-bulb-powerOnState
   - id: "IKEA/TRADFRI bulb E26 CWS opal 600lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
