@@ -54,6 +54,7 @@ local devices = {
     MATCHING_MATRIX = {
         { mfr = "IKEA of Sweden", model = "TRADFRIbulbE14WSglobeopal470lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb E27 WW 806lm" },
+        { mfr = "IKEA of Sweden", model = "TRADFRI bulb E27 WW globe 806lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb E27 CWS opal 600lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRIbulbE27WSglobeopal1055lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb GU10 WW 400lm" },

@@ -403,6 +403,11 @@ zigbeeManufacturer:
     manufacturer: IKEA of Sweden
     model: "TRADFRI bulb E27 WW 806lm"
     deviceProfileName: on-off-level-powerOnState
+  - id: "IKEA/TRADFRI bulb E27 WW globe 806lm"
+    deviceLabel: IKEA Light
+    manufacturer: IKEA of Sweden
+    model: "TRADFRI bulb E27 WW globe 806lm"
+    deviceProfileName: on-off-level-powerOnState
   - id: "IKEA/TRADFRI bulb E27 WW clear 250lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden
