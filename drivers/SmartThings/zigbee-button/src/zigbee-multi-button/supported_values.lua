@@ -82,7 +82,8 @@ local devices = {
   BUTTON_PUSH_HELD_DOUBLE_1 = {
     MATCHING_MATRIX = {
       { mfr = "ShinaSystem", model = "BSM-300Z" },
-      { mfr = "ShinaSystem", model = "SBM300ZB1" }
+      { mfr = "ShinaSystem", model = "SBM300ZB1" },
+      { mfr = "IKEA of Sweden", model = "TRADFRI SHORTCUT Button" },
     },
     SUPPORTED_BUTTON_VALUES = { "pushed", "held", "double" },
     NUMBER_OF_BUTTONS = 1

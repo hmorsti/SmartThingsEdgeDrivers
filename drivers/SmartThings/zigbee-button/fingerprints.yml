@@ -49,6 +49,11 @@ zigbeeManufacturer:
     manufacturer: KE
     model: TRADFRI open/close remote
     deviceProfileName: two-buttons-battery
+  - id: "IKEA/TRADFRI SHORTCUT Button"
+    deviceLabel: Tradfri Shortcut Button
+    manufacturer: IKEA of Sweden
+    model: TRADFRI SHORTCUT Button
+    deviceProfileName: one-button-battery
   - id: "CentraLite/3450-L"
     deviceLabel: Iris Remote Control
     manufacturer: CentraLite
