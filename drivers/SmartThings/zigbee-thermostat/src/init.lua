@@ -40,6 +40,7 @@ local ThermostatOperatingState  = capabilities.thermostatOperatingState
 local Battery                   = capabilities.battery
 local PowerSource               = capabilities.powerSource
 local RelativeHumidity          = capabilities.relativeHumidityMeasurement
+local Switch                    = capabilities.switch
 
 -- lux thermostat uses min 5V, max of 6.5V
 local BAT_MIN = 50.0
@@ -236,7 +237,8 @@ local zigbee_thermostat_driver = {
     ThermostatOperatingState,
     RelativeHumidity,
     Battery,
-    PowerSource
+    PowerSource,
+    Switch,
   },
   zigbee_handlers = {
     attr = {
@@ -294,7 +296,8 @@ local zigbee_thermostat_driver = {
     require("leviton"),
     require("danfoss"),
     require("popp"),
-    require("vimar")
+    require("vimar"),
+    require("sonoff"),
   },
 }
 

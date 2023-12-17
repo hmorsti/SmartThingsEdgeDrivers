@@ -119,6 +119,11 @@ zigbeeManufacturer:
     manufacturer: Centralite
     model: 3156105
     deviceProfileName: base-thermostat-no-operating-state
+  - id: "SONOFF/ZBTRV"
+    deviceLabel: SONOFF Thermostat
+    manufacturer: SONOFF
+    model: TRVZB
+    deviceProfileName: sonoff-trvzb
 zigbeeGeneric:
   - id: "genericThermostat"
     deviceLabel: Zigbee Thermostat
