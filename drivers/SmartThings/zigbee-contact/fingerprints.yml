@@ -194,6 +194,11 @@ zigbeeManufacturer:
     manufacturer: Third Reality, Inc
     model: 3RVS01031Z
     deviceProfileName: thirdreality-multi-sensor
+  - id: IKEA/PARASOLL
+    deviceLabel: IKEA Parasoll
+    manufacturer: IKEA of Sweden
+    model: PARASOLL Door/Window Sensor
+    deviceProfileName: contact-battery-profile
 zigbeeGeneric:
   - id: "contact-generic"
     deviceLabel: "Zigbee Contact Sensor"
