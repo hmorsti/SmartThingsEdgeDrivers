@@ -1,0 +1,186 @@
+dashboard:
+  states:
+    - component: main
+      capability: thermostatOperatingState
+      version: 1
+      idx: 0
+      group: main
+      composite: true
+    - component: main
+      capability: thermostatHeatingSetpoint
+      version: 1
+      idx: 0
+      group: Heat Temperature
+      composite: true
+    - component: main
+      capability: temperatureMeasurement
+      version: 1
+      idx: 0
+      group: Current temperature
+      composite: true
+    - component: main
+      capability: switch
+      version: 1
+      idx: 0
+      group: Main switch
+      values: []
+      composite: true
+    - component: main
+      capability: battery
+      version: 1
+      idx: 0
+      group: Battery
+      composite: true
+  actions:
+    - component: main
+      capability: switch
+      version: 1
+      idx: 0
+      group: Main switch
+      inline: null
+  basicPlus: []
+detailView:
+  - component: main
+    capability: switch
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: temperatureMeasurement
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: thermostatHeatingSetpoint
+    version: 1
+    values:
+      - key: heatingSetpoint.value
+        enabledValues: []
+        range:
+          - 4
+          - 35
+        step: 0.5
+    patch: []
+  - component: main
+    capability: thermostatMode
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: thermostatOperatingState
+    version: 1
+    values:
+      - key: thermostatOperatingState.value
+        enabledValues:
+          - heating
+          - idle
+        step: 1
+    patch: []
+  - component: main
+    capability: battery
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: firmwareUpdate
+    version: 1
+    values: []
+    patch: []
+  - component: main
+    capability: refresh
+    version: 1
+    values: []
+    patch: []
+automation:
+  conditions:
+    - component: main
+      capability: switch
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: temperatureMeasurement
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: thermostatHeatingSetpoint
+      version: 1
+      values:
+        - key: heatingSetpoint.value
+          enabledValues: []
+          range:
+            - 4
+            - 35
+          step: 0.5
+      patch: []
+      exclusion: []
+    - component: main
+      capability: thermostatMode
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: thermostatOperatingState
+      version: 1
+      values:
+        - key: thermostatOperatingState.value
+          enabledValues:
+            - heating
+            - idle
+          step: 1
+      patch: []
+      exclusion: []
+    - component: main
+      capability: battery
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: firmwareUpdate
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+  actions:
+    - component: main
+      capability: switch
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: thermostatHeatingSetpoint
+      version: 1
+      values:
+        - key: setHeatingSetpoint
+          enabledValues: []
+          range:
+            - 4
+            - 35
+          step: 0.5
+      patch: []
+      exclusion: []
+    - component: main
+      capability: thermostatMode
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: firmwareUpdate
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+    - component: main
+      capability: refresh
+      version: 1
+      values: []
+      patch: []
+      exclusion: []
+type: profile

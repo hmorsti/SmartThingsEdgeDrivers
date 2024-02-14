@@ -8,21 +8,10 @@ components:
     version: 1
   - id: thermostatHeatingSetpoint
     version: 1
-    config:
-      values:
-        - key: "heatingSetpoint.value"
-          range: [ 4, 35 ]
-          step: 0.5
   - id: thermostatMode
     version: 1
   - id: thermostatOperatingState
     version: 1
-    config:
-      values:
-        - key: "thermostatOperatingState.value"
-          enabledValues:
-            - heating
-            - idle
   - id: battery
     version: 1
   - id: firmwareUpdate
@@ -31,3 +20,9 @@ components:
     version: 1
   categories:
   - name: Thermostat
+metadata:
+  deviceType: Thermostat
+  ocfDeviceType: oic.d.thermostat
+  deviceTypeId: Thermostat
+  mnmn: SmartThingsCommunity
+  vid: a8591df5-ce77-3438-bc1b-919a9f50aedc
