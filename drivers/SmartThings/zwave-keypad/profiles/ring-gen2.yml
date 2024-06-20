@@ -314,7 +314,7 @@ preferences:
         2: "French"
         3: "German"
         4: "Italian"
-        5: "Spanish"
+        5: "Spanish (Latin America)"
         6: "Dutch"
         7: "Danish"
         8: "Norwegian"
@@ -322,7 +322,7 @@ preferences:
         10: "Finnish"
         11: "Arabic"
         12: "LANG_12"
-        13: "LANG_13"
+        13: "Spanish (Spain)"
       default: 0
   - title: "System security mode blink duration"
     name: securityBlinkDuration
