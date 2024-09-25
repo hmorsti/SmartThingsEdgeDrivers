@@ -26,7 +26,6 @@ local AnalogInput = clusters.AnalogInput
 
 local MFG_CODE = 0x115F
 local PRIVATE_CLUSTER_ID = 0xFCC0
-local PRIVATE_ATTRIBUTE_ID = 0x0009
 local RESTORE_POWER_STATE_ATTRIBUTE_ID = 0x0201
 local ELECTRIC_SWITCH_TYPE_ATTRIBUTE_ID = 0x000A
 
@@ -68,13 +67,6 @@ test.register_coroutine_test(
     test.socket.capability:__expect_send(
       mock_device:generate_test_message("main", capabilities.energyMeter.energy({ value = 0.0, unit = "Wh" }))
     )
-    test.socket.zigbee:__expect_send(
-      {
-        mock_device.id,
-        cluster_base.write_manufacturer_specific_attribute(mock_device, PRIVATE_CLUSTER_ID, PRIVATE_ATTRIBUTE_ID
-          , MFG_CODE, data_types.Uint8, 1)
-      }
-    )
   end
 )
 
@@ -111,6 +103,7 @@ test.register_coroutine_test(
   function()
     test.socket.capability:__queue_receive({ mock_device.id,
       { capability = "switch", component = "main", command = "on", args = {} } })
+    mock_device:expect_native_cmd_handler_registration("switch", "on")
     test.socket.zigbee:__expect_send({ mock_device.id,
       OnOff.server.commands.On(mock_device) })
   end
@@ -121,6 +114,7 @@ test.register_coroutine_test(
   function()
     test.socket.capability:__queue_receive({ mock_device.id,
       { capability = "switch", component = "main", command = "off", args = {} } })
+    mock_device:expect_native_cmd_handler_registration("switch", "off")
     test.socket.zigbee:__expect_send({ mock_device.id,
       OnOff.server.commands.Off(mock_device) })
   end

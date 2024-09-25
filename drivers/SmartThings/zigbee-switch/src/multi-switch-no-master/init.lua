@@ -46,6 +46,8 @@ local MULTI_SWITCH_NO_MASTER_FINGERPRINTS = {
   { mfr = "ShinaSystem", model = "SBM300Z4", children = 3 },
   { mfr = "ShinaSystem", model = "SBM300Z5", children = 4 },
   { mfr = "ShinaSystem", model = "SBM300Z6", children = 5 },
+  { mfr = "ShinaSystem", model = "SQM300Z2", children = 1 },
+  { mfr = "ShinaSystem", model = "SQM300Z3", children = 2 },
   { model = "E220-KR2N0Z0-HA", children = 1 },
   { model = "E220-KR3N0Z0-HA", children = 2 },
   { model = "E220-KR4N0Z0-HA", children = 3 },
@@ -55,10 +57,9 @@ local MULTI_SWITCH_NO_MASTER_FINGERPRINTS = {
 
 local function is_multi_switch_no_master(opts, driver, device)
   for _, fingerprint in ipairs(MULTI_SWITCH_NO_MASTER_FINGERPRINTS) do
-    if device:get_manufacturer() == nil and device:get_model() == fingerprint.model then
-      return true
-    elseif device:get_manufacturer() == fingerprint.mfr and device:get_model() == fingerprint.model then
-      return true
+    if device:get_model() == fingerprint.model and (device:get_manufacturer() == nil or device:get_manufacturer() == fingerprint.mfr) then
+      local subdriver = require("multi-switch-no-master")
+      return true, subdriver
     end
   end
   return false

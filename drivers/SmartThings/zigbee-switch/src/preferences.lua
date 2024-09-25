@@ -28,9 +28,7 @@ local POWER_ON_VALUES = {
 
 local devices = {
   AQARA_LIGHT = {
-    MATCHING_MATRIX = {
-        { mfr = "LUMI", model = "lumi.light.acn004" },
-    },
+    MATCHING_MATRIX = { mfr = "LUMI", model = "lumi.light.acn004" },
     PARAMETERS = {
       ["stse.restorePowerState"] = function(device, value)
         return cluster_base.write_manufacturer_specific_attribute(device, 0xFCC0,
@@ -47,6 +45,15 @@ local devices = {
       ["stse.lightFadeOutTimeInSec"] = function(device, value)
         local raw_value = value * 10 -- value unit: 1sec, transition time unit: 100ms
         return clusters.Level.attributes.OffTransitionTime:write(device, raw_value)
+      end
+    }
+  },
+  AQARA_LIGHT_BULB = {
+    MATCHING_MATRIX = { mfr = "Aqara", model = "lumi.light.acn014" },
+    PARAMETERS = {
+      ["stse.restorePowerState"] = function(device, value)
+        return cluster_base.write_manufacturer_specific_attribute(device, 0xFCC0,
+          0x0201, 0x115F, data_types.Boolean, value)
       end
     }
   },
@@ -71,7 +78,6 @@ local devices = {
     }
   },
 }
-
 local preferences = {}
 
 preferences.update_preferences = function(driver, device, args)

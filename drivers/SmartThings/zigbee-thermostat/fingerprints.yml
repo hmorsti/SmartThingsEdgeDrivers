@@ -119,6 +119,16 @@ zigbeeManufacturer:
     manufacturer: Centralite
     model: 3156105
     deviceProfileName: base-thermostat-no-operating-state
+  - id: "Resideo/DT300ST-M000"
+    deviceLabel: Main Thermostat
+    manufacturer: Resideo Korea
+    model: DT300ST-M000
+    deviceProfileName: thermostat-resideo-dt300st-m000
+  - id: "LUMI/lumi.airrtc.agl001"
+    deviceLabel: Aqara Smart Radiator Thermostat E1
+    manufacturer: LUMI
+    model: lumi.airrtc.agl001
+    deviceProfileName: thermostat-aqara
   - id: "SONOFF/ZBTRV"
     deviceLabel: SONOFF Thermostat
     manufacturer: SONOFF
