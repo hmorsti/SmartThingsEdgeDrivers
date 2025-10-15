@@ -1855,6 +1855,11 @@ zigbeeManufacturer:
     manufacturer: IKEA of Sweden
     model: TRADFRI bulb GU10 W 400lm
     deviceProfileName: on-off-level
+  - id: "TRADFRI bulb GU10 WW 345lm"
+    deviceLabel: IKEA Light
+    manufacturer: IKEA of Sweden
+    model: TRADFRI bulb GU10 WW 345lm
+    deviceProfileName: on-off-level-powerOnState
   - id: "IKEA/TRADFRI bulb GU10 WW 400lm"
     deviceLabel: IKEA Light
     manufacturer: IKEA of Sweden

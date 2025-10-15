@@ -64,6 +64,7 @@ local devices = {
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb E27 WW globe 806lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb E27 CWS opal 600lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRIbulbE27WSglobeopal1055lm" },
+        { mfr = "IKEA of Sweden", model = "TRADFRI bulb GU10 WW 345lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI bulb GU10 WW 400lm" },
         { mfr = "IKEA of Sweden", model = "TRADFRI Driver 30W" },
         { mfr = "Signify Netherlands B.V.", model = "LCA008" },
